@@ -6,17 +6,17 @@
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/assifpi/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assifpi/assets/css/bootstrap.min.css.map">
-        <link rel = "icon" href = "/assifpi/assets/img/logocolor.png"> 
+        <link rel="stylesheet" href="/biblioteca/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/biblioteca/assets/css/bootstrap.min.css.map">
+        <link rel = "icon" href = "/biblioteca/assets/img/logocolor.png"> 
         
-        <script src="/assifpi/assets/Chart.min.js"></script>
-        <script src="/assifpi/assets/js/jquery.min.js"></script>
+        <script src="/biblioteca/assets/Chart.min.js"></script>
+        <script src="/biblioteca/assets/js/jquery.min.js"></script>
 
-        <script src="/assifpi/assets/js/popper.min.js"></script>
-        <script src="/assifpi/assets/js/bootstrap.min.js"></script>
-        <script src="/assifpi/assets/js/icones.js"></script>
-        <script src='/assifpi/assets/js/funcoes.js'></script>
+        <script src="/biblioteca/assets/js/popper.min.js"></script>
+        <script src="/biblioteca/assets/js/bootstrap.min.js"></script>
+        <script src="/biblioteca/assets/js/icones.js"></script>
+        <script src='/biblioteca/assets/js/funcoes.js'></script>
     </head>
 
     <body>
