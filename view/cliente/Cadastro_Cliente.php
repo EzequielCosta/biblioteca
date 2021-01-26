@@ -1,3 +1,7 @@
+<?php
+session_start();
+//include("../barra_navegacao.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>

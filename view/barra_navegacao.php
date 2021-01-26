@@ -2,13 +2,15 @@
 <html>
     <head>
 
-        <title>ASSIFPI</title>
+        <title>Tolkien</title>
         <meta charset="UTF-8">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/biblioteca/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="/biblioteca/assets/css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "icon" href = "/biblioteca/assets/img/logocolor.png"> 
+        
         
         <script src="/biblioteca/assets/Chart.min.js"></script>
         <script src="/biblioteca/assets/js/jquery.min.js"></script>
@@ -17,6 +19,7 @@
         <script src="/biblioteca/assets/js/bootstrap.min.js"></script>
         <script src="/biblioteca/assets/js/icones.js"></script>
         <script src='/biblioteca/assets/js/funcoes.js'></script>
+        
     </head>
 
     <body>
@@ -90,7 +93,7 @@
                             <li class="nav-item dropdown">
 
                                 <a class="nav-link dropdown-toggle" href="#" id="calendario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-calendar-alt"></i>
+                                    <i class="fa fa-calendar"></i>
                                     Eventos
                                 </a>
 
