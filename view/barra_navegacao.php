@@ -41,21 +41,20 @@
 
                                 <a class="nav-link dropdown-toggle" href="#" id="socio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class='fa fa-user'></i>
-                                    Perfil
+                                    Funcionário
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="perfil">
-                                    <a class="dropdown-item" href="../socio/meus_dados.php">Dados de perfil</a>
-                                    <a class="dropdown-item" href="../socio/meus_dependentes.php">Meus dependentes</a>
-                                    <a class="dropdown-item" href="../socio/minhas_mensalidades.php">Minhas mensalidades</a>
-                                    <!--    <a class="dropdown-item" href="cadastro_adm.php">Cadastrar sócios</a> -->
-                                    <!--    <a class="dropdown-item" href="cadastro_adm.php">Cadastrar dependentes</a> -->
+                                    <a class="dropdown-item" href="/biblioteca/view/funcionario/cadastro_funcionario.php">Cadastrar Funcionários</a>
+                                    <a class="dropdown-item" href="/biblioteca/view/funcionario/pesquisar_funcionario.php">Pesquisar Funcionário</a>
+                                    <a class="dropdown-item" href="../socio/meus_dados.php">Editar Funcionário</a>
+                                    <a class="dropdown-item" href="../socio/meus_dependentes.php">Remover Funcionário</a>
 
                                 </div>
 
                             </li>
 
-                            <li class="nav-item dropdown">
+<!--                            <li class="nav-item dropdown">
 
                                 <a class="nav-link dropdown-toggle" href="#" id="adms" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class= 'fa fa-users'></i>
@@ -65,18 +64,24 @@
                                 <div class="dropdown-menu" aria-labelledby="Socios">
                                     <a class="dropdown-item" href="../socio/lista_socios_view.php">Visualizar sócios</a>
                                     <a class="dropdown-item" href="cliente/cadastro_socio.php">Cadastrar sócio</a>
-                                    <!-- <a class="dropdown-item" href="busca_socio_alteracao_view.php">Alterar sócio</a> -->
-                                    <!-- <a class="dropdown-item" href="busca_socio_remocao_view.php">Remover sócio</a> -->
+                                     <a class="dropdown-item" href="busca_socio_alteracao_view.php">Alterar sócio</a> 
+                                     <a class="dropdown-item" href="busca_socio_remocao_view.php">Remover sócio</a> 
 
                                 </div>
 
-                            </li>
-
+                            </li>-->
                             <li class="nav-item dropdown">
+
+                                <a class="nav-link" href="/biblioteca/view/emprestimo/cadastro_funcionario.php" id="emprestimo" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-chart-pie"></i>
+                                    Empréstimos
+                                </a>
+                            </li>
+<!--                            <li class="nav-item dropdown">
 
                                 <a class="nav-link dropdown-toggle" href="#" id="adms" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class= 'fa fa-users'></i>
-                                    Dependentes
+                                    Empréstimo
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="Socios">
@@ -87,25 +92,25 @@
 
                                 </div>
 
-                            </li>
+                            </li>-->
 
 
                             <li class="nav-item dropdown">
 
                                 <a class="nav-link dropdown-toggle" href="#" id="calendario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-calendar"></i>
-                                    Eventos
+                                    Clientes
                                 </a>
 
                                  <div class="dropdown-menu" aria-labelledby="caledario"> 
-                                     <a class="dropdown-item" href="../evento/cadastro_evento.php">Agendar eventos</a> 
-                                     <a class="dropdown-item" href="#">Eventos pendentes</a> 
-                                     <a class="dropdown-item" href="#">Eventos passados</a> 
+                                     <a class="dropdown-item" href="../evento/cadastro_evento.php">Cadastrar Clientes</a> 
+                                     <a class="dropdown-item" href="#">Editar Cliente</a> 
+                                     <a class="dropdown-item" href="#">Remover Cliente</a> 
                                  </div> 
 
                             </li>
 
-                            <li class="nav-item dropdown">
+<!--                            <li class="nav-item dropdown">
 
                                 <a class="nav-link" href="#" id="mensalidades" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-money-check-alt"></i>
@@ -118,29 +123,22 @@
 
                                  </div> 
 
-                            </li>
+                            </li>-->
 
-                            <li class="nav-item dropdown">
+<!--                            <li class="nav-item dropdown">
 
                                 <a class="nav-link" href="../socio/estatistica_socio.php" id="estatisticas" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-chart-pie"></i>
                                     Estatísticas
                                 </a>
+                            </li>-->
 
-                                <!--    <div class="dropdown-menu" aria-labelledby="paciente"> -->
-                                <!--        <a class="dropdown-item" href="consulta_view.php">Verificar Consultas</a> -->
-                                <!--        <a class="dropdown-item" href="agendamento_view.php">Agendar consulta</a> -->
-
-                                <!--   </div> -->
-
-                            </li>
-
-                            <li class="nav-item dropdown">
+<!--                            <li class="nav-item dropdown">
 
                                 <a class="nav-link" href="#" id="notificacoes" role="button" aria-haspopup="true" aria-expanded="false">
                                     <i class="fa fa-bell"></i>
                                     Notificações
-                                </a>
+                                </a>-->
 
                                 <!-- <div class="dropdown-menu" aria-labelledby="paciente"> -->
                                 <!--     <a class="dropdown-item" href="consulta_view.php">Verificar Consultas</a> -->
@@ -148,7 +146,7 @@
 
                                 <!-- </div> -->
 
-                            </li>
+<!--                            </li>-->
 
                             <li class="nav-item ">
 

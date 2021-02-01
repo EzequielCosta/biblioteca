@@ -194,5 +194,49 @@ class Funcionario{
             echo 'Exceção capturada: ', $e->getMessage(), "\n";
         }
     }
+    
+    function editar (){
+        $sql = "UPDATE funcionario SET
+            nome = ?,
+            telefone = ? ,
+            data_nascimento = ?, 
+            usuario_id = ?,
+            estado_id = ?,
+            cidade_id = ?,
+            bairro = ?,
+            logradouro = ?,
+            numero = ?,
+            cpf = ?,
+            nome_usuario = ?,
+            senha = ?,
+            email = ? WHERE id = ?";
+        $stm = $this->conexao->prepare($sql);
+        $bind = array(
+            $this->nome,
+            $this->telefone,
+            $this->data_nascimento,
+            $this->usuarioId,
+            $this->estadoId,
+            $this->cidadeId,
+            $this->bairro,
+            $this->logradouro,
+            $this->numero,
+            $this->cpf,
+            $this->nome_usuario,
+            $this->senha,
+            $this->email,
+            $this->id
+            );
+        try{
+            $resultado = $stm->execute($bind);
+            if ($resultado){
+                return true;
+            }else{
+                return false;
+            }
+        } catch (Exception $e){
+            echo 'Exceção capturada: ', $e->getMessage(), "\n";
+        }
+    }
 
 }

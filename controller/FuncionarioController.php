@@ -8,8 +8,8 @@ class FuncionarioController{
         if ($acao === "gravar") {
             $this->inserirFuncionario();
         }
-        if($acao === "atualizar"){
-            $this->atualizarEvento();
+        if($acao === "editar"){
+            $this->editarFuncionario();
         }
 
         if($acao === "deletar"){
@@ -76,6 +76,49 @@ class FuncionarioController{
         $json = json_encode($resultado);
         echo $json;
         exit();
+        
+        
+        
+    }
+    
+    
+    public function editarFuncionario(){
+        //$formulario = $_POST['formulario'];
+        //$parametros = array();
+//        foreach ($formulario as $dado){
+//            $parametros[$dado['name']] = $dado['value'];
+//        }
+        $funcionario = new Funcionario(filter_input(INPUT_POST, 'id'),
+                filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS), 
+                filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'logradouro', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'bairro', FILTER_SANITIZE_SPECIAL_CHARS), 
+                filter_input(INPUT_POST, 'numero', FILTER_SANITIZE_SPECIAL_CHARS), 
+                filter_input(INPUT_POST, 'data_nascimento', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'tipo_usuario', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'estado', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'cidade', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'cpf', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'email', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'nome_usuario', FILTER_SANITIZE_SPECIAL_CHARS),
+                filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_SPECIAL_CHARS)
+                );
+        //$funcionario = new Funcionario($parametros);
+        try{
+            $resultado = $funcionario->editar();
+            
+            if ($resultado){
+                $_SESSION['critica'] = "Cadastrado com sucesso";
+            }else{
+                $_SESSION['critica'] = "Erro ao cadastrar";
+            }
+        } catch (Exception $e){
+            $_SESSION['critica'] = $e->getMessage();
+        }
+        header('Location: ../view/funcionario/pesquisar_funcionario.php');
+        exit();
+        
+        
         
         
         
